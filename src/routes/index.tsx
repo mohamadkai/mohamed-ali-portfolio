@@ -110,7 +110,7 @@ const projects = [
     desc: "Mass-gain pack told through Hulk-scale energy and impact.",
   },
   {
-  img: workMasdarAlqahwa1,
+  img: projectMasdarAlqahwa1,
   title: "Masdar Alqahwa — Coffee Menu Visual",
   client: "Masdar Alqahwa",
   year: "2025",
@@ -118,7 +118,7 @@ const projects = [
   desc: "A warm coffee-led visual translating product range into a simple, premium social post.",
 },
 {
-  img: workMasdarAlqahwa2,
+  img: projectMasdarAlqahwa2,
   title: "Masdar Alqahwa — Morning Coffee Moment",
   client: "Masdar Alqahwa",
   year: "2025",
