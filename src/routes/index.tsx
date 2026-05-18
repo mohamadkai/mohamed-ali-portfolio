@@ -109,6 +109,22 @@ const projects = [
     tag: "Campaign / Cinematic",
     desc: "Mass-gain pack told through Hulk-scale energy and impact.",
   },
+  {
+  img: workMasdarAlqahwa1,
+  title: "Masdar Alqahwa — Coffee Menu Visual",
+  client: "Masdar Alqahwa",
+  year: "2025",
+  tag: "Branding / Social",
+  desc: "A warm coffee-led visual translating product range into a simple, premium social post.",
+},
+{
+  img: workMasdarAlqahwa2,
+  title: "Masdar Alqahwa — Morning Coffee Moment",
+  client: "Masdar Alqahwa",
+  year: "2025",
+  tag: "Product / Social",
+  desc: "Lifestyle coffee content built around quiet morning moments and brand recall.",
+},
 ];
 
 const brands = [
