@@ -24,8 +24,8 @@ import workKhaleds3 from "@/assets/work-khaleds-3.jpg";
 import workFuelup1 from "@/assets/work-fuelup-1.jpg";
 import workFuelup2 from "@/assets/work-fuelup-2.jpg";
 import kayanVideo from "@/assets/kayan-video.mp4";
-import workmasdaralqahwa1 from "@/assets/work-masdar_alqahwa-1";
-import workmasdaralqahwa2 from "@/assets/work-masdar_alqahwa-2";
+import workmasdaralqahwa1 from "@/assets/work-masdar-alqahwa-1";
+import workmasdaralqahwa2 from "@/assets/work-masdar-alqahwa-2";
 export const Route = createFileRoute("/")({
   component: Index,
 });
