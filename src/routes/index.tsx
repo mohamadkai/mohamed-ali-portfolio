@@ -182,13 +182,28 @@ function Nav() {
           MOHAMED<span className="text-[var(--gold)]">.</span>ALI
         </a>
         <nav className="hidden md:flex items-center gap-10 text-xs uppercase tracking-[0.25em] text-white">
-          <a href="#work" className="hover:text-[var(--gold)] transition">Work</a>
-          <a href="#brands" className="hover:text-[var(--gold)] transition">Brands</a>
-          <a href="#results" className="hover:text-[var(--gold)] transition">Results</a>
-          <a href="#about" className="hover:text-[var(--gold)] transition">About</a>
-          <a href="#contact" className="hover:text-[var(--gold)] transition">Contact</a>
+          <a href="#work" className="hover:text-[var(--gold)] transition">
+            Work
+          </a>
+          <a href="#brands" className="hover:text-[var(--gold)] transition">
+            Brands
+          </a>
+          <a href="#results" className="hover:text-[var(--gold)] transition">
+            Results
+          </a>
+          <a href="#about" className="hover:text-[var(--gold)] transition">
+            About
+          </a>
+          <a href="#contact" className="hover:text-[var(--gold)] transition">
+            Contact
+          </a>
         </nav>
-        <a href={WHATSAPP} target="_blank" rel="noreferrer" className="text-xs uppercase tracking-[0.25em] text-white border border-white/40 px-4 py-2 hover:bg-white hover:text-black transition">
+        <a
+          href={WHATSAPP}
+          target="_blank"
+          rel="noreferrer"
+          className="text-xs uppercase tracking-[0.25em] text-white border border-white/40 px-4 py-2 hover:bg-white hover:text-black transition"
+        >
           Let's talk
         </a>
       </div>
@@ -206,7 +221,10 @@ function Hero() {
   const headline = "Stories that".split(" ");
   return (
     <section id="top" ref={ref} className="relative min-h-screen overflow-hidden flex items-end">
-      <motion.div style={{ y, scale }} className="absolute inset-0 bg-gradient-to-br from-[var(--gold)]/10 via-black to-black" />
+      <motion.div
+        style={{ y, scale }}
+        className="absolute inset-0 bg-gradient-to-br from-[var(--gold)]/10 via-black to-black"
+      />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(212,175,55,0.15),transparent_60%)]" />
 
       <motion.div style={{ opacity }} className="relative w-full px-6 md:px-12 pb-20 md:pb-28">
@@ -247,9 +265,13 @@ function Hero() {
           className="mt-8 flex flex-col md:flex-row md:items-end md:justify-between gap-6 max-w-5xl"
         >
           <p className="text-base md:text-lg text-white/70 max-w-md">
-            I'm Mohamed Ali — a content creative building bold campaigns, video, and brand worlds for people who refuse to blend in.
+            I'm Mohamed Ali — a content creative building bold campaigns, video, and brand worlds
+            for people who refuse to blend in.
           </p>
-          <a href="#work" className="text-xs uppercase tracking-[0.3em] text-white border-b border-[var(--gold)] pb-1 self-start md:self-end">
+          <a
+            href="#work"
+            className="text-xs uppercase tracking-[0.3em] text-white border-b border-[var(--gold)] pb-1 self-start md:self-end"
+          >
             See selected work ↓
           </a>
         </motion.div>
@@ -267,7 +289,16 @@ function Hero() {
 }
 
 function Marquee() {
-  const items = ["Brand Films", "Campaigns", "Social", "Reels", "Direction", "Concept", "Story", "Identity"];
+  const items = [
+    "Brand Films",
+    "Campaigns",
+    "Social",
+    "Reels",
+    "Direction",
+    "Concept",
+    "Story",
+    "Identity",
+  ];
   return (
     <div className="border-y border-white/10 py-6 overflow-hidden">
       <motion.div
@@ -291,7 +322,9 @@ function Work() {
     <section id="work" className="px-6 md:px-12 py-24 md:py-32">
       <div className="flex items-end justify-between mb-16">
         <div>
-          <p className="text-xs uppercase tracking-[0.4em] text-[var(--gold)] mb-3">01 — Selected Work</p>
+          <p className="text-xs uppercase tracking-[0.4em] text-[var(--gold)] mb-3">
+            01 — Selected Work
+          </p>
           <motion.h2
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -333,7 +366,10 @@ function ProjectCard({ w, i }: { w: Project; i: number }) {
   useEffect(() => {
     if (!videoRef.current) return;
     if (hover) videoRef.current.play().catch(() => {});
-    else { videoRef.current.pause(); videoRef.current.currentTime = 0; }
+    else {
+      videoRef.current.pause();
+      videoRef.current.currentTime = 0;
+    }
   }, [hover]);
 
   return (
@@ -348,7 +384,11 @@ function ProjectCard({ w, i }: { w: Project; i: number }) {
     >
       {w.video ? (
         <>
-          <img src={w.poster} alt={w.title} className="absolute inset-0 w-full h-full object-cover" />
+          <img
+            src={w.poster}
+            alt={w.title}
+            className="absolute inset-0 w-full h-full object-cover"
+          />
           <video
             ref={videoRef}
             src={w.video}
@@ -375,7 +415,9 @@ function ProjectCard({ w, i }: { w: Project; i: number }) {
           <span className="w-8 h-px bg-[var(--gold)]" />
           <span>{w.year}</span>
         </div>
-        <h3 className="font-[Bebas_Neue] text-3xl md:text-5xl tracking-tight text-white">{w.title}</h3>
+        <h3 className="font-[Bebas_Neue] text-3xl md:text-5xl tracking-tight text-white">
+          {w.title}
+        </h3>
         <p className="text-sm text-white/60 mt-1">for {w.client}</p>
         <AnimatePresence>
           {hover && (
@@ -405,7 +447,9 @@ function Brands() {
   return (
     <section id="brands" className="px-6 md:px-12 py-24 md:py-32 border-t border-white/10">
       <div className="mb-14">
-        <p className="text-xs uppercase tracking-[0.4em] text-[var(--gold)] mb-3">02 — Trusted By</p>
+        <p className="text-xs uppercase tracking-[0.4em] text-[var(--gold)] mb-3">
+          02 — Trusted By
+        </p>
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -427,8 +471,14 @@ function Brands() {
             whileHover={{ scale: 1.02 }}
             className="bg-background aspect-square flex items-center justify-center p-6 group overflow-hidden relative"
           >
-            <img src={b.img} alt={b.name} className="max-w-full max-h-full object-contain transition-transform duration-700 group-hover:scale-110" />
-            <div className="absolute bottom-3 left-3 text-xs uppercase tracking-[0.3em] text-white/40 group-hover:text-[var(--gold)] transition">{b.name}</div>
+            <img
+              src={b.img}
+              alt={b.name}
+              className="max-w-full max-h-full object-contain transition-transform duration-700 group-hover:scale-110"
+            />
+            <div className="absolute bottom-3 left-3 text-xs uppercase tracking-[0.3em] text-white/40 group-hover:text-[var(--gold)] transition">
+              {b.name}
+            </div>
           </motion.div>
         ))}
       </div>
@@ -440,7 +490,9 @@ function Results() {
   return (
     <section id="results" className="px-6 md:px-12 py-24 md:py-32 border-t border-white/10">
       <div className="mb-14">
-        <p className="text-xs uppercase tracking-[0.4em] text-[var(--gold)] mb-3">03 — Real Results</p>
+        <p className="text-xs uppercase tracking-[0.4em] text-[var(--gold)] mb-3">
+          03 — Real Results
+        </p>
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -448,7 +500,8 @@ function Results() {
           transition={{ duration: 0.7 }}
           className="font-[Bebas_Neue] text-5xl md:text-7xl tracking-tight"
         >
-          Numbers that<br />
+          Numbers that
+          <br />
           <span className="italic font-serif text-[var(--gold)]">don't</span> lie.
         </motion.h2>
       </div>
@@ -463,10 +516,16 @@ function Results() {
             className="border border-white/10 bg-white/[0.02] overflow-hidden group"
           >
             <div className="aspect-[3/4] overflow-hidden bg-white/5 flex items-center justify-center">
-              <img src={r.img} alt={r.label} className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105" />
+              <img
+                src={r.img}
+                alt={r.label}
+                className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+              />
             </div>
             <div className="p-5 border-t border-white/10">
-              <div className="font-[Bebas_Neue] text-3xl tracking-wider text-[var(--gold)]">{r.label}</div>
+              <div className="font-[Bebas_Neue] text-3xl tracking-wider text-[var(--gold)]">
+                {r.label}
+              </div>
               <div className="text-xs uppercase tracking-[0.3em] text-white/50 mt-1">{r.sub}</div>
             </div>
           </motion.div>
@@ -489,21 +548,26 @@ function About() {
             transition={{ duration: 0.7 }}
             className="font-[Bebas_Neue] text-6xl md:text-8xl tracking-tight leading-none"
           >
-            The<br />Maker.
+            The
+            <br />
+            Maker.
           </motion.h2>
         </div>
         <div className="md:col-span-7 md:col-start-6 space-y-6 text-lg md:text-xl text-white/80 leading-relaxed">
           <p>
-            I'm Mohamed Ali — a content creative obsessed with the moment a brand stops sounding like a brand and starts sounding like a person.
+            I'm Mohamed Ali — a content creative obsessed with the moment a brand stops sounding
+            like a brand and starts sounding like a person.
           </p>
           <p className="text-white/60 text-base">
-            From concept to camera to caption, I build stories that earn attention instead of buying it. I work with founders, agencies and labels to ship work that's loud, specific, and honest.
+            From concept to camera to caption, I build stories that earn attention instead of buying
+            it. I work with founders, agencies and labels to ship work that's loud, specific, and
+            honest.
           </p>
           <div className="grid grid-cols-3 gap-6 pt-8 border-t border-white/10">
             {[
               { n: "60+", l: "Projects" },
               { n: "12", l: "Brands" },
-              { n: "7yr", l: "Experience" },
+              { n: "4yr", l: "Experience" },
             ].map((s, i) => (
               <motion.div
                 key={s.l}
@@ -512,7 +576,9 @@ function About() {
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
               >
-                <div className="font-[Bebas_Neue] text-4xl md:text-5xl text-[var(--gold)]">{s.n}</div>
+                <div className="font-[Bebas_Neue] text-4xl md:text-5xl text-[var(--gold)]">
+                  {s.n}
+                </div>
                 <div className="text-xs uppercase tracking-[0.25em] text-white/50 mt-1">{s.l}</div>
               </motion.div>
             ))}
@@ -540,7 +606,8 @@ function Contact() {
         transition={{ duration: 0.8 }}
         className="font-[Bebas_Neue] text-6xl md:text-[12vw] leading-[0.85] tracking-tight"
       >
-        Got a story<br />
+        Got a story
+        <br />
         <span className="italic font-serif text-[var(--gold)]">worth</span> telling?
       </motion.h2>
       <a
@@ -565,9 +632,15 @@ function Contact() {
             transition={{ delay: i * 0.08 }}
             className="bg-background p-4 md:p-5 group hover:bg-[var(--gold)] hover:text-black transition-colors"
           >
-            <div className="text-[10px] uppercase tracking-[0.3em] text-white/50 group-hover:text-black/60 mb-2">{s.label}</div>
-            <div className="font-[Bebas_Neue] text-base md:text-lg tracking-wider truncate">{s.value}</div>
-            <div className="mt-3 text-[10px] uppercase tracking-[0.3em] opacity-0 group-hover:opacity-100 transition">Open →</div>
+            <div className="text-[10px] uppercase tracking-[0.3em] text-white/50 group-hover:text-black/60 mb-2">
+              {s.label}
+            </div>
+            <div className="font-[Bebas_Neue] text-base md:text-lg tracking-wider truncate">
+              {s.value}
+            </div>
+            <div className="mt-3 text-[10px] uppercase tracking-[0.3em] opacity-0 group-hover:opacity-100 transition">
+              Open →
+            </div>
           </motion.a>
         ))}
       </div>

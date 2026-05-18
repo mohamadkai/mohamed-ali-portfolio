@@ -1,4 +1,4 @@
-import { H as jsxRuntimeExports, P as reactExports } from "./server-DgKh-T99.mjs";
+import { H as jsxRuntimeExports, P as reactExports } from "./server-BMyY7Rhl.mjs";
 import "node:async_hooks";
 import "node:stream/web";
 import "node:stream";
@@ -9117,7 +9117,7 @@ function About() {
         n: "12",
         l: "Brands"
       }, {
-        n: "7yr",
+        n: "4yr",
         l: "Experience"
       }].map((s, i) => /* @__PURE__ */ jsxRuntimeExports.jsxs(motion.div, { initial: {
         opacity: 0,

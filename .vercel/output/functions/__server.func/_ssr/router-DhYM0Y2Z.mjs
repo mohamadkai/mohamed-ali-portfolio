@@ -1,4 +1,4 @@
-import { d as compileDecodeCharMap, g as createLRUCache, _ as trimPath, X as rewriteBasepath, e as composeRewrites, N as processRouteTree, M as processRouteMasks, W as resolvePath, c as cleanPath, a0 as trimPathRight, f as createControlledPromise, L as parseHref, o as executeRewriteInput, y as isDangerousProtocol, Q as redirect, E as isRedirect, B as isNotFound, s as findSingleMatch, j as deepEqual, D as DEFAULT_PROTOCOL_ALLOWLIST, b as buildRouteBranch, w as interpolatePath, K as nullReplaceEqualDeep, T as replaceEqualDeep$1, I as last, i as decodePath, q as findFlatMatch, t as functionalUpdate$1, r as findRouteMatch, C as isPromise, x as invariant, Y as rootRouteId, a2 as useRouter, H as jsxRuntimeExports, O as Outlet, v as hasKeys, p as executeRewriteOutput, a as arraysEqual, P as reactExports, R as React, n as exactPathTest, S as removeTrailingSlash, A as isModuleNotFoundError, F as isServer$1, k as dummyMatchContext, J as matchContext, m as escapeHtml, z as isInlinableStylesheet, u as getAssetCrossOrigin, a1 as useHydrated, $ as trimPathLeft, G as joinPaths, V as resolveManifestAssetLink, l as encodePathLikeUrl, U as requireReactDom } from "./server-DgKh-T99.mjs";
+import { d as compileDecodeCharMap, g as createLRUCache, _ as trimPath, X as rewriteBasepath, e as composeRewrites, N as processRouteTree, M as processRouteMasks, W as resolvePath, c as cleanPath, a0 as trimPathRight, f as createControlledPromise, L as parseHref, o as executeRewriteInput, y as isDangerousProtocol, Q as redirect, E as isRedirect, B as isNotFound, s as findSingleMatch, j as deepEqual, D as DEFAULT_PROTOCOL_ALLOWLIST, b as buildRouteBranch, w as interpolatePath, K as nullReplaceEqualDeep, T as replaceEqualDeep$1, I as last, i as decodePath, q as findFlatMatch, t as functionalUpdate$1, r as findRouteMatch, C as isPromise, x as invariant, Y as rootRouteId, a2 as useRouter, H as jsxRuntimeExports, O as Outlet, v as hasKeys, p as executeRewriteOutput, a as arraysEqual, P as reactExports, R as React, n as exactPathTest, S as removeTrailingSlash, A as isModuleNotFoundError, F as isServer$1, k as dummyMatchContext, J as matchContext, m as escapeHtml, z as isInlinableStylesheet, u as getAssetCrossOrigin, a1 as useHydrated, $ as trimPathLeft, G as joinPaths, V as resolveManifestAssetLink, l as encodePathLikeUrl, U as requireReactDom } from "./server-BMyY7Rhl.mjs";
 import "node:async_hooks";
 import "node:stream/web";
 import "node:stream";
@@ -4714,23 +4714,41 @@ const Route$1 = createRootRouteWithContext()({
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Mohamed Ali — Content Creative" },
-      { name: "description", content: "Mohamed Ali is a content creative crafting bold stories, visuals and campaigns that break the formula." },
+      {
+        name: "description",
+        content: "Mohamed Ali is a content creative crafting bold stories, visuals and campaigns that break the formula."
+      },
       { name: "author", content: "Mohamed Ali" },
       { property: "og:title", content: "Mohamed Ali — Content Creative" },
-      { property: "og:description", content: "Mohamed Ali is a content creative crafting bold stories, visuals and campaigns that break the formula." },
+      {
+        property: "og:description",
+        content: "Mohamed Ali is a content creative crafting bold stories, visuals and campaigns that break the formula."
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
       { name: "twitter:title", content: "Mohamed Ali — Content Creative" },
-      { name: "twitter:description", content: "Mohamed Ali is a content creative crafting bold stories, visuals and campaigns that break the formula." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1e426b74-9257-47fc-9010-2fb4d91ba2d9/id-preview-b3ea4448--1f40aa29-b295-4179-be97-8db49b18d2cb.lovable.app-1778663728493.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1e426b74-9257-47fc-9010-2fb4d91ba2d9/id-preview-b3ea4448--1f40aa29-b295-4179-be97-8db49b18d2cb.lovable.app-1778663728493.png" }
+      {
+        name: "twitter:description",
+        content: "Mohamed Ali is a content creative crafting bold stories, visuals and campaigns that break the formula."
+      },
+      {
+        property: "og:image",
+        content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1e426b74-9257-47fc-9010-2fb4d91ba2d9/id-preview-b3ea4448--1f40aa29-b295-4179-be97-8db49b18d2cb.lovable.app-1778663728493.png"
+      },
+      {
+        name: "twitter:image",
+        content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1e426b74-9257-47fc-9010-2fb4d91ba2d9/id-preview-b3ea4448--1f40aa29-b295-4179-be97-8db49b18d2cb.lovable.app-1778663728493.png"
+      }
     ],
     links: [
       { rel: "stylesheet", href: appCss },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;700&display=swap" }
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;700&display=swap"
+      }
     ]
   }),
   shellComponent: RootShell,
@@ -4751,7 +4769,7 @@ function RootComponent() {
   const { queryClient } = Route$1.useRouteContext();
   return /* @__PURE__ */ jsxRuntimeExports.jsx(QueryClientProvider, { client: queryClient, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Outlet, {}) });
 }
-const $$splitComponentImporter = () => import("./index-DTQ8DvjG.mjs");
+const $$splitComponentImporter = () => import("./index-DcaJ8Z9c.mjs");
 const Route2 = createFileRoute("/")({
   component: lazyRouteComponent($$splitComponentImporter, "component")
 });

@@ -73,23 +73,46 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Mohamed Ali — Content Creative" },
-      { name: "description", content: "Mohamed Ali is a content creative crafting bold stories, visuals and campaigns that break the formula." },
+      {
+        name: "description",
+        content:
+          "Mohamed Ali is a content creative crafting bold stories, visuals and campaigns that break the formula.",
+      },
       { name: "author", content: "Mohamed Ali" },
       { property: "og:title", content: "Mohamed Ali — Content Creative" },
-      { property: "og:description", content: "Mohamed Ali is a content creative crafting bold stories, visuals and campaigns that break the formula." },
+      {
+        property: "og:description",
+        content:
+          "Mohamed Ali is a content creative crafting bold stories, visuals and campaigns that break the formula.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
       { name: "twitter:title", content: "Mohamed Ali — Content Creative" },
-      { name: "twitter:description", content: "Mohamed Ali is a content creative crafting bold stories, visuals and campaigns that break the formula." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1e426b74-9257-47fc-9010-2fb4d91ba2d9/id-preview-b3ea4448--1f40aa29-b295-4179-be97-8db49b18d2cb.lovable.app-1778663728493.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1e426b74-9257-47fc-9010-2fb4d91ba2d9/id-preview-b3ea4448--1f40aa29-b295-4179-be97-8db49b18d2cb.lovable.app-1778663728493.png" },
+      {
+        name: "twitter:description",
+        content:
+          "Mohamed Ali is a content creative crafting bold stories, visuals and campaigns that break the formula.",
+      },
+      {
+        property: "og:image",
+        content:
+          "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1e426b74-9257-47fc-9010-2fb4d91ba2d9/id-preview-b3ea4448--1f40aa29-b295-4179-be97-8db49b18d2cb.lovable.app-1778663728493.png",
+      },
+      {
+        name: "twitter:image",
+        content:
+          "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1e426b74-9257-47fc-9010-2fb4d91ba2d9/id-preview-b3ea4448--1f40aa29-b295-4179-be97-8db49b18d2cb.lovable.app-1778663728493.png",
+      },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;700&display=swap" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;700&display=swap",
+      },
     ],
   }),
   shellComponent: RootShell,
